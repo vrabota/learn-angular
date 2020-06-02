@@ -1,0 +1,12 @@
+<div class="form-group">
+  <input type="text" class="form-control" [(ngModel)]="username">
+  <br />
+  <p>Your username is: {{username}}</p>
+  <button
+    class="btn btn-primary"
+    [disabled]="!isValidForm()"
+    (click)="resetForm()"
+  >
+    Reset user!
+  </button>
+</div>

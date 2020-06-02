@@ -1,0 +1,11 @@
+<button class="btn btn-primary" (click)="onToggleButton()">Toggle Details</button>
+<p *ngIf="showPassword">Secret password = tuna</p>
+<ul>
+  <li
+    *ngFor="let item of clickedItems; let i = index"
+    [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : 'white' }"
+    [ngClass]="{ 'white-text': i >= 4 }"
+  >
+    Button clicked {{item}} times
+  </li>
+</ul>
